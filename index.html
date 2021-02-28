@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI组件库</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <style>
+        :root {
+            --btn-height: 32px;
+            --font-size: 14px;
+            --btn-bg: #fff;
+            --font-color: #333;
+            --border-color: #999;
+            --border-radius: 4px;
+            --btn-hover-bg: #eee;
+            --btn-active-bg: #999;
+        }
+    </style>
+
+    <style>
+        .c-btn {
+            height: var(--btn-height);
+            padding: 0 1em;
+            background-color: var(--btn-bg);
+            color: var(--font-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+        }
+
+        .c-btn:hover {
+            background-color: var(--btn-hover-bg);
+        }
+
+        .c-btn:active {
+            outline: none;
+            background-color: var(--btn-active-bg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <c-button></c-button>
+    </div>
+
+
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script src="./button.js"></script>
+    <script>
+        new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+
+</html>
